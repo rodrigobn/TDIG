@@ -34,10 +34,10 @@ MOEDAS:
 Obs: Utilize ponto (.) para separar a parte decimal.
  */
 
-console.log(numeroRandomico())
 quebraValor(numeroRandomico())
 
 function quebraValor(valor){
+    console.log(valor)
     quebraMoedas(quebraNotas(valor))
     }
 
@@ -147,8 +147,7 @@ function quebraMoedas(moedas){
     }
 }
 
-function numeroRandomico() {
-    let valorMaximo = 1000000
+function numeroRandomico(valorMaximo = 100) {
     var precisao = 100; // 2 decimais
     
     return Math.floor(Math.random() * (valorMaximo * precisao - 1 * precisao) + 1 * precisao) / (1 * precisao);

@@ -6,7 +6,7 @@
  * deve utilizar alguma função callback.
  */
 
-const notas = [4, 7.5, 9.2, 6]
+const notas = [2.3, 8.2, 6.5, 10]
 
 notas.forEach(nota => {
     atribuiConceito(nota, resultado => {
@@ -14,9 +14,14 @@ notas.forEach(nota => {
     })
 })
 
+/**
+ * Atribui conceito [A,B,C,D] a nota recebida
+ * @param {*} nota Nota 
+ * @param {*} callback Função que retorna o conceito em relação a nota
+ */
 function atribuiConceito(nota, callback) {
     if(0 < nota && nota < 4.9) return callback(`conceito: D`)
     if(5 < nota && nota < 6.9) return callback(`conceito: C`)
     if(7 < nota && nota < 8.9) return callback(`conceito: B`)
-    if(9 < nota) return callback(`conceito: A`)
+    if(9 <= nota) return callback(`conceito: A`)
 }

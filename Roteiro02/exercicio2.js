@@ -23,7 +23,7 @@ const objetoPa = {
 
 const objetoPg = {
     id: 1,
-    nome: 'pg',
+    progressao: 'pg',
     numeroTermos: 4,
     primeiroTermo: 1,
     razao: 4
@@ -32,7 +32,10 @@ const objetoPg = {
 escolheProgressao(objetoPa)
 escolheProgressao(objetoPg)
 
-
+/**
+ * Seleciona a progressão PA ou PG
+ * @param {*} objeto objeto com parametro "progressao"
+ */
 function escolheProgressao(objeto){
     const {nome, numeroTermos, primeiroTermo, razao} = objeto
 
@@ -46,6 +49,12 @@ function escolheProgressao(objeto){
     }
 }
 
+/**
+ * Progressão Aritmética
+ * @param {*} numeroTermos 
+ * @param {*} primeiroTermo 
+ * @param {*} razao 
+ */
 function pa(numeroTermos, primeiroTermo, razao) {
     let soma = primeiroTermo
     
@@ -58,6 +67,12 @@ function pa(numeroTermos, primeiroTermo, razao) {
     console.log(`\nSomatorio = ${soma}\n`)
 }
 
+/**
+ * Progressão Geométrica
+ * @param {*} numeroTermos 
+ * @param {*} primeiroTermo 
+ * @param {*} razao 
+ */
 function pg(numeroTermos, primeiroTermo, razao) {
     let soma = primeiroTermo
     for (let termo = 1; termo <= numeroTermos; termo++) {

@@ -6,6 +6,11 @@
  * maior antes do menor.
  */
 
+ /**
+  * Numeros primos no intervalo [inicio, fim]
+  * @param {*} inicio 
+  * @param {*} fim 
+  */
 function numerosPrimos(inicio = 0, fim = 100) {
     let resultado = ''
     if (inicio > fim) {
