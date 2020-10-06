@@ -5,12 +5,14 @@ for (var index = 0; index < 4; index++) {
 
 console.log(index)
 
+/*
 //usando let a variavel permanece ativa apenas no bloco
 for (let index2 = 0; index2 < 4; index2++) {
     console.log(index2)    
 }
-
 //console.log(index2) //index2 não definido
+*/
+
 
 const functions = []
 

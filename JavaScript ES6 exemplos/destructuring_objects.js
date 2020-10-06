@@ -9,7 +9,7 @@ const pessoa = {
     }
 }
 
-//Exração direta
+//Extração direta
 console.log(`Nome: ${pessoa.nome}`)
 
 //Extração desestruturada
