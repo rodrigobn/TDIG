@@ -147,7 +147,7 @@ function quebraMoedas(moedas){
     }
 }
 
-function numeroRandomico(valorMaximo = 100) {
+function numeroRandomico(valorMaximo = 100000) {
     var precisao = 100; // 2 decimais
     
     return Math.floor(Math.random() * (valorMaximo * precisao - 1 * precisao) + 1 * precisao) / (1 * precisao);
